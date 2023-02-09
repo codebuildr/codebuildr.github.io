@@ -34,7 +34,7 @@
   <code>mdadm --create /dev/md0 /dev/value1 /dev/value2 /dev/value3 /dev/value4 --level=5 --raid-devices=4</code><br><br>
   
   g. Using find to do the same thing as above<br>
-  <code>array_name=($(find ./ -type d -regex '.*nvme[0-9].[0-9]*'))</code>
+  <code>array_name=($(find ./ -type d -regex '.*nvme[0-9].[0-9]*'))</code><br>
   <code>mdadm --create /dev/md0 `find ./ -type d -regex '.*nvme[0-9].[0-9]*'))` --level=5 --raid-devices=${#array_name[@]}</code><br><br>
   
   With the method above, the trick is finding the number of results and the results themselves without making an array first, if you're not<br>
