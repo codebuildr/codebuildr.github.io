@@ -32,8 +32,9 @@
   <code>mdadm --create /dev/md0 `for i in ${array_name[*]}; do echo /dev/$i; done` --level=5 --raid-devices=${#array_name[@]}</code><br><br>
   Result:<br>
   <code>mdadm --create /dev/md0 /dev/value1 /dev/value2 /dev/value3 /dev/value4 --level=5 --raid-devices=4</code><br><br>
-  g. Using find to do the same thing as above, find seems to output as a string, so finding a array length is 1<br>
-     so instead the find is run and wc is used to check the number of result lines<br>
-  <code>mdadm --create /dev/md0 `find /dev/ -type d -regex '.*nvme[0-9].[0-9]*'` --level=5 --raid-devices=`find ./ -type d -regex '.*nvme[0-9].[0-9]*' | wc -l`</code><br><br>
+  
+  g. Using find to do the same thing as above
+  <code>array_name=($(find ./ -type d -regex '.*nvme[0-9].[0-9]*'))
+  <code>mdadm --create /dev/md0 `find ./ -type d -regex '.*nvme[0-9].[0-9]*'))` --level=5 --raid-devices=`${#array_name[@]}`</code><br><br>
   
 </html>
