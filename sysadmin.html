@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
-<h2>Sysadmin Stuff</h2>
-
-1. Working with BASH arrays and command substitution:
-  a. Declaration of the BASH array
-  <code>array_name=("value1" "value2" "value3" "value4")</code>
-  
-  b. Access the array elements
-  <code> echo ${array_name[0]}</code>
-  <code> echo ${array_name[1]}</code>
-  <code> echo ${array_name[2]}</code>
-  <code> echo ${array_name[3]}</code>
-    
-  c. Print all values at one time
-  <code> echo ${array_name[*]}</code>
-  <code>value1 value2 value3 value4</code>
-  
-  d. Get array length
-  <code> echo ${#array_name[@]}</code>
-  
-  e. Use arrays values for command arguments (using backticks)
-  <code> mkdir `echo ${array_name[*]}` </code>
+<h2>Sysadmin Stuff</h2><br>
+<br>
+<br>
+1. Working with BASH arrays and command substitution:<br>
+  a. Declaration of the BASH array<br>
+  <code>array_name=("value1" "value2" "value3" "value4")</code><br>
+  <br>
+  b. Access the array elements<br>
+  <code> echo ${array_name[0]}</code><br>
+  <code> echo ${array_name[1]}</code><br>
+  <code> echo ${array_name[2]}</code><br>
+  <code> echo ${array_name[3]}</code><br>
+    <br>
+  c. Print all values at one time<br>
+  <code> echo ${array_name[*]}</code><br>
+  <code>value1 value2 value3 value4</code><br>
+  <br>
+  d. Get array length<br>
+  <code> echo ${#array_name[@]}</code><br>
+  <br>
+  e. Use arrays values for command arguments (using backticks)<br>
+  <code> mkdir `echo ${array_name[*]}` </code><br>
 </html>
