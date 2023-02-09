@@ -43,8 +43,8 @@
      otherwise, the task would be:
   
      <p><code>
-       -name: Build RAID with mdadm
-        shell: mdadm --create /dev/md0 `find ./ -type d -regex '.*nvme[0-9].[0-9]*'))` --level=5 --raid-devices=3</code>
+       -name: Build RAID with mdadm<br>
+        shell: mdadm --create /dev/md0 `find ./ -type d -regex '.*nvme[0-9].[0-9]*'))` --level=5 --raid-devices=3</code><br>
   </p>
   
   With the method above, the trick is finding the number of results and the results themselves without making an array first, if you're not<br>
