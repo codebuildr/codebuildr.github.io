@@ -39,6 +39,14 @@
   <code>array_name=($(find ./ -type d -regex '.*nvme[0-9].[0-9]*'))</code><br>
   <code>mdadm --create /dev/md0 `find ./ -type d -regex '.*nvme[0-9].[0-9]*'))` --level=5 --raid-devices=${#array_name[@]}</code><br><br>
   
+  h. Running the above line on a remote host with ansible, encounters a problem with the '#' character (${#array_name[@]})<br>
+     otherwise, the task would be:
+  
+     <p><code>
+       -name: Build RAID with mdadm
+        shell: mdadm --create /dev/md0 `find ./ -type d -regex '.*nvme[0-9].[0-9]*'))` --level=5 --raid-devices=3</code>
+  </p>
+  
   With the method above, the trick is finding the number of results and the results themselves without making an array first, if you're not<br>
   able to store the array value.<br>
   
