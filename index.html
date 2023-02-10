@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Kayak Code Main</title>
-  </head>
-  <body>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayak Code Blog</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a, p, h1, h2, h3, h4, h5, h6 {
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            padding: 10px 20px 10px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            border-left: 1px solid #333;
+            border-right: 1px solid #333;
+        }
+        header {
+            background-color: #333;
+        }
+        header nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        header nav a {
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            color: yellow;
+        }
+        section {
+            padding: 20px;
+        }
+        main {
+            float: left;
+            width: 70%;
+        }
+        main p {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+            padding: 0px 20px 0px 20px;
+        }
+        aside {
+            float: right;
+            width: 25%;
+        }
+        aside p {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+            padding: 20px;
+        }
+        aside ul {
+            padding: 0px 20px 0px 20px;
+        }
+        aside ul li {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+            list-style: none;
+            padding: 3px 0px 3px 0px;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            width: 100%;
+        }
+        footer p, ul li {
+            color: white;
+        }
+        footer p {
+            padding: 10px;
+        }
+        footer a {
+            color: white;
+            padding: 0px 10px 0px 10px;
+        }
+        footer a:hover {
+            color: yellow;
+        }
+        @media (max-width: 700px) {
+            main {
+                float: none;
+                width: 100%;
+            }
+            aside {
+                float: none;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Blog Post #1</h2>
+                <p>Blog text content</p>
+            </section>
+            <hr>
+            <section>
+                <h2>Blog Post #2</h2>
+                <p>Blog text content</p>
+            </section>
+            <hr>
+            <section>
+                <h2>Blog Post #3</h2>
+                <p>Blog text content</p>
+            </section>
+            <hr>
+            <section>
+                <h2>Blog Post #4</h2>
+                <p>Blog text content</p>
+            </section>
+            <hr>
+            <section>
+                <h2>Blog Post #5</h2>
+                <p>Blog text content</p>
+            </section>
+            <hr>    
+        </main>
+        <aside>
+            <h3>About</h3>
+            <p>Blah </p>
+            <hr>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">Blog Post #5</a>2</li>
+                <li><a href="#">Blog Post #4</a>3</li>
+                <li><a href="#">Blog Post #3</a>4</li>
+                <li><a href="#">Blog Post #2</a>5</li>
+                <li><a href="#">Blog Post #1</a>6</li>
+            </ul>
+        </aside>
+        <footer>
+            <section>
+                <p>Skip to page:</p>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </section>
+            <p style="padding: 0px 10px 25px 10px;">Copyright &copy 2023 - Kayak Code dot COM</p>
+        </footer>
+    </div>
+</body>
 </html>
       
       
