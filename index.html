@@ -45,12 +45,16 @@
         section {
             padding: 20px;
         }
+        div {
+            padding: 10px 20px 10px 20px;
+            color: white;
+        }
         main {
             float: left;
             width: 70%;
         }
         main p {
-            font-size: smaller;    <!-- originally 1.1rem -->
+            font-size: smaller;     <!-- 1.1rem orignal / blog preview but now under <div> -->
             line-height: 1.6rem;
             padding: 0px 20px 0px 20px;
         }
@@ -59,7 +63,7 @@
             width: 25%;
         }
         aside p {
-            font-size: 1.1rem;
+            font-size: smaller;      <!-- about content -->
             line-height: 1.6rem;
             padding: 20px;
         }
@@ -67,7 +71,7 @@
             padding: 0px 20px 0px 20px;
         }
         aside ul li {
-            font-size: 1.1rem;
+            font-size: smaller;        <!-- 1.1rem orignal -->
             line-height: 1.6rem;
             list-style: none;
             padding: 3px 0px 3px 0px;
@@ -118,44 +122,54 @@
         <main>
             <section>
                 <h3>Introduction</h3>
-                <p>Here goes nothing, I've benefitted a lot from blogs especially tech blogs in my career.<br>
-                   I've often had to learn new things once, and then never used them again for <br>
-                   some time, so they are forgotten.  I hope to write some things here that I can <br>
-                   refer to later.</p>
+                <p>Feb 09, 2023</p>
+                <!--  content ruler                                                  -->
+                <div>Here goes nothing, I've benefitted a lot from blogs especially tech<br>
+                     blogs in my career. I've often had to learn new things once, and<br>
+                     then never used them again for some time, so they are forgotten.<br>
+                       I hope to write some things here that I can refer to later.</div>
             </section>
-            <hr>
             <section>
                 <h3>Working with 'sed'</h3>
-                <p>Blog text content</p>
+                <div>Some might find it strange, that in over 20 years of using linux as<br>
+                   a desktop and server OS, there are a lot of programs like <code>sed</code><br>
+                   that I haven't used much.  Recently I ran into an issue that required<br>
+                   a little research.</div>
             </section>
-            <hr>
-            <section>
-                <h3>Software RAID in Ubuntu 22.04</h3>
-                <p>Blog text content</p>
-            </section>
-            <hr>
             <section>
                 <h3>Working with Ansible</h3>
-                <p>Blog text content</p>
+                <div>I've used ansible off and on over the past few years, but a recent<br>
+                     project caused me to need a crash course.  It was great to re-visit<br>
+                     the software and let it simplify a big task.</div>
             </section>
-            <hr>
             <section>
-                <h3>Blog Entry #5</h3>
-                <p>Blog text content</p>
+                <h3>Using lsblk</h3>
+                <div>Recently I was running ansible against a server, and I needed to<br>
+                     verify that a disk was formated and mounted as a result.</div>
             </section>
-            <hr>    
+            <section>
+                <h3>Software RAID in Ubuntu 22.04</h3>
+                <div>Blog text content</div>
+            </section>   
         </main>
         <aside>
             <h3>About</h3>
-            <p>Blah </p>
+            <p>I started my Linux life
+               in 1996 with Slackware.
+               Since then, I've spent my 
+               career using Linux distros
+               as a desktop OS and Server
+               platform. I spend my time
+               administering servers and
+               coding python, ansible, html 
+               and others.</p>
             <hr>
             <h3>Recent Posts</h3>
             <ul>
-                <li><a href="#">Blog Post #5</a></li>
-                <li><a href="#">Blog Post #4</a></li>
-                <li><a href="#">Blog Post #3</a></li>
+                <li><a href="#">Working with 'sed'</a></li>
+                <li><a href="#">Working with Ansible</a></li>
+                <li><a href="#">Using lsblk</a></li>
                 <li><a href="#">Blog Post #2</a></li>
-                <li><a href="#">Blog Post #1</a></li>
             </ul>
         </aside>
         <footer>
